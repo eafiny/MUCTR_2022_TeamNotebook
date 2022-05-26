@@ -1,0 +1,5 @@
+.text-area .content {
+    -fx-font-weight: bold;  /* текст полужирный */
+    /*-fx-background-image: url("https://www.leuchtturm1917.ru/upload/iblock/ef5/ef5e112973f33baa7289a8eab9fc769d.jpg");*/
+    -fx-background-image: url("/images/2.jpg"); /* фоновое изображение */
+}

@@ -1,0 +1,26 @@
+@import "text-area-style.css"; /* импорт другого css-файла*/
+
+.root{    /* стиль всего приложения */
+    -fx-font-size: 16;   /* размер шрифта */
+    -fx-font-style: italic;  /* стиль шрифта, italic - курсив */
+    /*-fx-background-image: url("/images/1.jpg");*/   /* установить изображение фона*/
+}
+.button{         /* стиль всех кнопок */
+    -fx-background-color: #D8BFD8; /* заливка фона */
+    -fx-border-color: #800080;   /* цвет границы */
+    -fx-text-fill: #2a00ff;   /* цвет текста */
+    -fx-highlight-fill: aqua;  /* цвет фона при наведении мыши */
+    -fx-highlight-text-fill: #ff0048;  /* цвет текста при наведении мыши  */
+}
+#btnAdd {    /* стиль для одной конкретной кнопки с id "btnAdd" */
+    -fx-background-color: Aquamarine;
+}
+.button:hover {    /* стиль при наведении мыши на кнопки */
+    -fx-font-weight: bold;  /* текст полужирный */
+}
+#btnAdd:hover {     /* стиль при наведении мыши для одной конкретной кнопки с id "btnAdd" */
+    -fx-background-color: Turquoise;
+}
+.text-area {       /* стиль компонентов TextArea */
+    -fx-font-weight: bold;
+}

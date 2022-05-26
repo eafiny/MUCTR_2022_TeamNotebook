@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <stylesheets>
+      <URL value="@/css/mainStyle.css" />
+   </stylesheets>
+   <top>
+      <HBox prefHeight="38.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#clickBtnAdd" prefHeight="39.0" prefWidth="200.0" text="Добавить задачу" />
+            <Button fx:id="btnDel" mnemonicParsing="false" onAction="#clickBtnDel" prefHeight="39.0" prefWidth="113.0" text="Удалить" />
+            <TextField fx:id="deleteTextField" onAction="#deleteTask" prefHeight="38.0" prefWidth="44.0" visible="false" />
+            
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox fx:id="vbox" prefHeight="200.0" prefWidth="96.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnTopic1" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" text="Проект 1" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <TextField fx:id="textField1" onAction="#textFieldClick" visible="false" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Label text="      " visible="false" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
